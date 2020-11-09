@@ -220,6 +220,10 @@ namespace PlayfairCipher
 
             kAlpha = removeDuplicates(kAlpha);
 
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.ColumnCount = table.GetLength(1);
+
             // filling 2D array with characters from kAplha string
             for (int i = 0; i < table.GetLength(0); i++)
             {
@@ -228,6 +232,16 @@ namespace PlayfairCipher
                     table[i, j] = kAlpha[table.GetLength(0) * i + j];
                 }
             }
+
+            for (int i = 0; i < table.GetLength(0); i++) 
+            {
+                string[] row = new string[table.GetLength(1)];
+                for (int j = 0; j < table.GetLength(0); j++) 
+                {
+                    row[j] = Convert.ToString(table[i, j]);
+                }
+                dataGridView1.Rows.Add(row);
+            }            
         }
 
         private List<string> makeDigrams(string text)
@@ -245,7 +259,7 @@ namespace PlayfairCipher
             return digrams;
         }
 
-        private void showDigrams(List<string> digrams, Label label)
+        private void showDigrams(List<string> digrams, TextBox textBox)
         {
             if(digrams.Count() > 1)
             {
@@ -255,7 +269,7 @@ namespace PlayfairCipher
                     sc.Append(digram);
                 }
 
-                label.Text = sc.ToString();
+                textBox.Text = sc.ToString();
             }
         }
 
@@ -265,6 +279,7 @@ namespace PlayfairCipher
             string keyword = keyTextInput.Text;
 
             string editedText = editOpenText(openText);
+            editedTextOut.Text = editedText;
 
             List<string> digrams = makeDigrams(editedText);
 
@@ -278,7 +293,7 @@ namespace PlayfairCipher
                 encryptedDigrams.Add(encryptDigram(digram));
             }
 
-            showDigrams(encryptedDigrams, output);
+            showDigrams(encryptedDigrams, encryptedTextOut);
         }
 
         private void startDecryption(string encryptedText)
@@ -292,7 +307,7 @@ namespace PlayfairCipher
                 decryptedDigrams.Add(encryptDigram(encDigram, true));
             }
 
-            showDigrams(decryptedDigrams, deOutput);
+            showDigrams(decryptedDigrams, decryptedTextOut);
         }
 
         private void decryptBtn_Click(object sender, EventArgs e)
