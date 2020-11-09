@@ -14,3 +14,18 @@ C:\Users\filip\source\repos\PlayfairCipher\PlayfairCipher\obj\Debug\aa\PlayfairC
 C:\Users\filip\source\repos\PlayfairCipher\PlayfairCipher\bin\Debug\FluentValidation.dll
 C:\Users\filip\source\repos\PlayfairCipher\PlayfairCipher\bin\Debug\FluentValidation.xml
 C:\Users\filip\source\repos\PlayfairCipher\PlayfairCipher\obj\Debug\PlayfairCipher.csproj.CopyComplete
+D:\Dokumenty\C SHARP\playfairCipher\PlayfairCipher\bin\Debug\PlayfairCipher.exe.config
+D:\Dokumenty\C SHARP\playfairCipher\PlayfairCipher\bin\Debug\PlayfairCipher.exe
+D:\Dokumenty\C SHARP\playfairCipher\PlayfairCipher\bin\Debug\PlayfairCipher.pdb
+D:\Dokumenty\C SHARP\playfairCipher\PlayfairCipher\bin\Debug\aa\PlayfairCipher.resources.dll
+D:\Dokumenty\C SHARP\playfairCipher\PlayfairCipher\bin\Debug\FluentValidation.dll
+D:\Dokumenty\C SHARP\playfairCipher\PlayfairCipher\bin\Debug\FluentValidation.xml
+D:\Dokumenty\C SHARP\playfairCipher\PlayfairCipher\obj\Debug\PlayfairCipher.csprojAssemblyReference.cache
+D:\Dokumenty\C SHARP\playfairCipher\PlayfairCipher\obj\Debug\PlayfairCipher.Form1.resources
+D:\Dokumenty\C SHARP\playfairCipher\PlayfairCipher\obj\Debug\PlayfairCipher.Properties.Resources.resources
+D:\Dokumenty\C SHARP\playfairCipher\PlayfairCipher\obj\Debug\PlayfairCipher.Form1.aa.resources
+D:\Dokumenty\C SHARP\playfairCipher\PlayfairCipher\obj\Debug\PlayfairCipher.csproj.GenerateResource.cache
+D:\Dokumenty\C SHARP\playfairCipher\PlayfairCipher\obj\Debug\aa\PlayfairCipher.resources.dll
+D:\Dokumenty\C SHARP\playfairCipher\PlayfairCipher\obj\Debug\PlayfairCipher.csproj.CopyComplete
+D:\Dokumenty\C SHARP\playfairCipher\PlayfairCipher\obj\Debug\PlayfairCipher.exe
+D:\Dokumenty\C SHARP\playfairCipher\PlayfairCipher\obj\Debug\PlayfairCipher.pdb

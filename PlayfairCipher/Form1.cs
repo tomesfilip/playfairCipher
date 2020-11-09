@@ -218,6 +218,8 @@ namespace PlayfairCipher
                 kAlpha += engAlphabet[i];
             }
 
+            kAlpha = removeDuplicates(kAlpha);
+
             // filling 2D array with characters from kAplha string
             for (int i = 0; i < table.GetLength(0); i++)
             {
@@ -228,16 +230,16 @@ namespace PlayfairCipher
             }
         }
 
-        private List<string> makeDigrams(string editedText)
+        private List<string> makeDigrams(string text)
         {
             List<string> digrams = new List<string>();
 
-            for (int i = 0; i < editedText.Length; i += 2)
+            for (int i = 0; i < text.Length; i += 2)
             {
                 string el = "";
-                el += editedText[i];
-                el += editedText[i + 1];
-                digrams.Add(el.ToString());
+                el += text[i];
+                el += text[i + 1];
+                digrams.Add(el);
             }
 
             return digrams;
@@ -255,13 +257,6 @@ namespace PlayfairCipher
 
                 label.Text = sc.ToString();
             }
-        }
-
-
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void encryptBtn_Click(object sender, EventArgs e)
@@ -286,10 +281,9 @@ namespace PlayfairCipher
             showDigrams(encryptedDigrams, output);
         }
 
-        private void startDecryption()
+        private void startDecryption(string encryptedText)
         {
-            string encryptedText = decryptTextInput.Text;
-            //to finish
+            List<string> encryptedDigrams = makeDigrams(encryptedText);
 
             List<string> decryptedDigrams = new List<string>();
 
@@ -305,7 +299,7 @@ namespace PlayfairCipher
         {
             if (decryptTextInput.Text.Length > 0)
             {
-                startDecryption();
+                startDecryption(decryptTextInput.Text);
             }
             else
             {
@@ -336,6 +330,5 @@ namespace PlayfairCipher
         {
             errorP.SetError(keyTextInput, "");
         }
-
     }
 }

@@ -118,25 +118,110 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="decryptBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>469, 249</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="decryptBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="decryptBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 50</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 106</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 19</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 196</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 19</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 58</value>
+  </data>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 19</value>
+  </data>
+  <data name="output.Location" type="System.Drawing.Point, System.Drawing">
+    <value>388, 384</value>
+  </data>
+  <data name="output.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="output.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 13</value>
+  </data>
+  <data name="deOutput.Location" type="System.Drawing.Point, System.Drawing">
+    <value>388, 414</value>
+  </data>
+  <data name="deOutput.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="deOutput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 13</value>
+  </data>
+  <data name="encryptBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>291, 249</value>
+  </data>
+  <data name="encryptBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="encryptBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 50</value>
+  </data>
   <data name="keyTextInput.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10.2pt</value>
   </data>
+  <data name="keyTextInput.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 55</value>
+  </data>
+  <data name="keyTextInput.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
   <data name="keyTextInput.Size" type="System.Drawing.Size, System.Drawing">
-    <value>555, 27</value>
+    <value>417, 23</value>
   </data>
   <data name="encryptionTextInput.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10.2pt</value>
   </data>
+  <data name="encryptionTextInput.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 106</value>
+  </data>
+  <data name="encryptionTextInput.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
   <data name="encryptionTextInput.Size" type="System.Drawing.Size, System.Drawing">
-    <value>555, 27</value>
+    <value>417, 23</value>
   </data>
   <data name="decryptTextInput.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10.2pt</value>
   </data>
+  <data name="decryptTextInput.Location" type="System.Drawing.Point, System.Drawing">
+    <value>172, 193</value>
+  </data>
+  <data name="decryptTextInput.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
   <data name="decryptTextInput.Size" type="System.Drawing.Size, System.Drawing">
-    <value>544, 27</value>
+    <value>409, 23</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>907, 600</value>
+    <value>680, 488</value>
   </data>
 </root>
