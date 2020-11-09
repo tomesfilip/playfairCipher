@@ -142,6 +142,11 @@ namespace PlayfairCipher
             return newDigram;
         }
 
+        private string convertSpaces(string text)
+        {
+            return text.Replace(" ", "Q");
+        }
+
         private string removeDuplicates(string word)
         {
             string removed = "";
@@ -162,6 +167,15 @@ namespace PlayfairCipher
             return removed;
         }
 
+        private string removeX (string text)
+        {
+            if(text[text.Length - 1] == 'X')
+            {
+                text = text.Remove(text.Length - 1);
+            }
+            return text;
+        }
+
 
         private string editOpenText(string openText)
         {
@@ -175,7 +189,7 @@ namespace PlayfairCipher
             }
 
             openText = removedDiacritics.ToString().ToUpper();
-            openText = (openText.Contains(" ")) ? openText.Replace(" ", "") : openText;
+            //openText = (openText.Contains(" ")) ? openText.Replace(" ", "") : openText;
 
             // replacing W and Q for their equivalent in czech language
             openText = (openText.Contains('W')) ? openText.Replace('W', 'V') : openText;
@@ -200,7 +214,7 @@ namespace PlayfairCipher
             }
 
             editedText = (editedText.Length % 2 != 0) ? editedText += 'X' : editedText;
-
+            editedText = convertSpaces(editedText);
             return editedText.Trim();
         }
 
@@ -259,7 +273,7 @@ namespace PlayfairCipher
             return digrams;
         }
 
-        private void showDigrams(List<string> digrams, TextBox textBox)
+        private void showDigrams(List<string> digrams, TextBox textBox, bool decryption = false)
         {
             if(digrams.Count() > 1)
             {
@@ -269,22 +283,38 @@ namespace PlayfairCipher
                     sc.Append(digram);
                 }
 
-                textBox.Text = sc.ToString();
+                string outText = sc.ToString();
+                if (decryption)
+                {
+                    outText = removeX(outText);
+                    outText = (outText.Contains("Q") ? outText.Replace("Q", " ") : outText);
+                }
+               
+                textBox.Text = outText;
             }
         }
 
         private void encryptBtn_Click(object sender, EventArgs e)
         {
-            string openText = encryptionTextInput.Text;
-            string keyword = keyTextInput.Text;
+            if (encryptionTextInput.Text.Length > 0 && keyTextInput.Text.Length > 0)
+            {
+                startEncryption(encryptionTextInput.Text, keyTextInput.Text);
+            }
+            else
+            {
+                MessageBox.Show("Enter text into the open text field.");
+            }
+        }
 
+        private void startEncryption(string openText, string keyword)
+        {
             string editedText = editOpenText(openText);
             editedTextOut.Text = editedText;
 
             List<string> digrams = makeDigrams(editedText);
 
             keyword = removeDuplicates(keyword).ToUpper();
-            fillTable(keyword);            
+            fillTable(keyword);
 
             List<string> encryptedDigrams = new List<string>();
 
@@ -307,18 +337,18 @@ namespace PlayfairCipher
                 decryptedDigrams.Add(encryptDigram(encDigram, true));
             }
 
-            showDigrams(decryptedDigrams, decryptedTextOut);
+            showDigrams(decryptedDigrams, decryptedTextOut, true);
         }
 
         private void decryptBtn_Click(object sender, EventArgs e)
         {
-            if (decryptTextInput.Text.Length > 0)
+            if (decryptTextInput.Text.Length > 0 && decryptTextInput.Text.Length % 2 == 0)
             {
                 startDecryption(decryptTextInput.Text);
             }
             else
             {
-                MessageBox.Show("Enter encrypted text into the decryption field.");
+                MessageBox.Show("Enter valid encrypted text into the decryption field.");
             }
         }
 
