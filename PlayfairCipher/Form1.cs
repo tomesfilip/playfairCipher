@@ -288,9 +288,18 @@ namespace PlayfairCipher
                 {
                     outText = removeX(outText);
                     outText = (outText.Contains("Q") ? outText.Replace("Q", " ") : outText);
+                    textBox.Text = outText;
+                }
+                if (!decryption)
+                {
+                    for (int i = 0; i < outText.Length; i++)
+                    {
+                        if (i % 5 == 0 && i != 0) textBox.Text += " ";
+                        textBox.Text += outText[i];
+                    }
+
                 }
                
-                textBox.Text = outText;
             }
         }
 
@@ -328,6 +337,8 @@ namespace PlayfairCipher
 
         private void startDecryption(string encryptedText)
         {
+            encryptedText = encryptedText.Replace(" ", "");
+
             List<string> encryptedDigrams = makeDigrams(encryptedText);
 
             List<string> decryptedDigrams = new List<string>();
@@ -342,7 +353,7 @@ namespace PlayfairCipher
 
         private void decryptBtn_Click(object sender, EventArgs e)
         {
-            if (decryptTextInput.Text.Length > 0 && decryptTextInput.Text.Length % 2 == 0)
+            if (decryptTextInput.Text.Length > 0)
             {
                 startDecryption(decryptTextInput.Text);
             }
