@@ -167,13 +167,29 @@ namespace PlayfairCipher
             return removed;
         }
 
-        private string removeX (string text)
+        private string removeX(string text)
         {
-            if(text[text.Length - 1] == 'X')
+            string removedX = "";
+
+            for (int i = 0; i < text.Length; i++)
             {
-                text = text.Remove(text.Length - 1);
+                if (i == 0)
+                {
+                    removedX += text[i];
+                    continue;
+                }
+                if (i == text.Length - 1)
+                {
+                    return (text[text.Length - 1] != 'X') ? removedX += text[i] : removedX;
+                }
+                if (text[i-1] == text[i + 1] && text[i] == 'X' && i > 0)
+                {
+                    continue;
+                }
+                removedX += text[i];
             }
-            return text;
+
+            return removedX;
         }
 
 
@@ -237,6 +253,7 @@ namespace PlayfairCipher
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.ColumnCount = table.GetLength(1);
+            dataGridView1.Rows.Clear();
 
             // filling 2D array with characters from kAplha string
             for (int i = 0; i < table.GetLength(0); i++)
@@ -277,6 +294,7 @@ namespace PlayfairCipher
         {
             if(digrams.Count() > 1)
             {
+                textBox.Text = "";
                 StringBuilder sc = new StringBuilder();
                 foreach (var digram in digrams)
                 {

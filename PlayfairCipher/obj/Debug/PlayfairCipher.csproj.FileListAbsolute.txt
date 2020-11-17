@@ -29,3 +29,19 @@ D:\Dokumenty\C SHARP\playfairCipher\PlayfairCipher\obj\Debug\aa\PlayfairCipher.r
 D:\Dokumenty\C SHARP\playfairCipher\PlayfairCipher\obj\Debug\PlayfairCipher.csproj.CopyComplete
 D:\Dokumenty\C SHARP\playfairCipher\PlayfairCipher\obj\Debug\PlayfairCipher.exe
 D:\Dokumenty\C SHARP\playfairCipher\PlayfairCipher\obj\Debug\PlayfairCipher.pdb
+C:\Users\tomes\source\repos\playfairCipher\PlayfairCipher\bin\Debug\PlayfairCipher.exe.config
+C:\Users\tomes\source\repos\playfairCipher\PlayfairCipher\bin\Debug\PlayfairCipher.exe
+C:\Users\tomes\source\repos\playfairCipher\PlayfairCipher\bin\Debug\PlayfairCipher.pdb
+C:\Users\tomes\source\repos\playfairCipher\PlayfairCipher\bin\Debug\aa\PlayfairCipher.resources.dll
+C:\Users\tomes\source\repos\playfairCipher\PlayfairCipher\bin\Debug\FluentValidation.dll
+C:\Users\tomes\source\repos\playfairCipher\PlayfairCipher\bin\Debug\FluentValidation.xml
+C:\Users\tomes\source\repos\playfairCipher\PlayfairCipher\obj\Debug\PlayfairCipher.csprojAssemblyReference.cache
+C:\Users\tomes\source\repos\playfairCipher\PlayfairCipher\obj\Debug\PlayfairCipher.Form1.resources
+C:\Users\tomes\source\repos\playfairCipher\PlayfairCipher\obj\Debug\PlayfairCipher.Properties.Resources.resources
+C:\Users\tomes\source\repos\playfairCipher\PlayfairCipher\obj\Debug\PlayfairCipher.Form1.aa.resources
+C:\Users\tomes\source\repos\playfairCipher\PlayfairCipher\obj\Debug\PlayfairCipher.csproj.GenerateResource.cache
+C:\Users\tomes\source\repos\playfairCipher\PlayfairCipher\obj\Debug\PlayfairCipher.csproj.CoreCompileInputs.cache
+C:\Users\tomes\source\repos\playfairCipher\PlayfairCipher\obj\Debug\aa\PlayfairCipher.resources.dll
+C:\Users\tomes\source\repos\playfairCipher\PlayfairCipher\obj\Debug\PlayfairCipher.csproj.CopyComplete
+C:\Users\tomes\source\repos\playfairCipher\PlayfairCipher\obj\Debug\PlayfairCipher.exe
+C:\Users\tomes\source\repos\playfairCipher\PlayfairCipher\obj\Debug\PlayfairCipher.pdb
